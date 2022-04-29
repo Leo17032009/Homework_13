@@ -188,6 +188,15 @@ public class GameManager : MonoBehaviour
 
 	public void GameStart()
 	{
+		_startPanel.SetActive (false);
+		_scorePanel.SetActive (true);
+		CreatePlatform ();
+		SetRandomSize (_nextPillar);
+		_currentState = GameState.INPUT;
+	}
+
+	public void GameRestart()
+	{
 		StateManager.instance.hasSceneStarted = true;
 		UnityEngine.SceneManagement.SceneManager.LoadScene (0);
 	}
@@ -220,3 +229,4 @@ public class GameManager : MonoBehaviour
 		}
 	}
 }
+
