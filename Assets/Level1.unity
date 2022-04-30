@@ -1134,7 +1134,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1943680969}
-        m_MethodName: GameOver
+        m_MethodName: GameRestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1385,31 +1385,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fda2a4025189a469aba1a918527ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startPos: {x: 0, y: 0, z: 0}
-  _minMaxRange: {x: 5, y: 5}
-  _spawnRange: {x: 0, y: 0}
-  _pillarPrefab: {fileID: 1595827206542434, guid: 18bf797e2ff3bb54a90d696997b6b71f,
+  startPos: {x: 0, y: 0, z: 0}
+  minMaxRange: {x: 0, y: 0}
+  spawnRange: {x: 0, y: 0}
+  pillarPrefab: {fileID: 1472200817057158, guid: 18bf797e2ff3bb54a90d696997b6b71f,
     type: 2}
-  _playerPrefab: {fileID: 1551309097385912, guid: 9242f181477c0d4468734c81f6716458,
+  playerPrefab: {fileID: 1551529469501290, guid: 9242f181477c0d4468734c81f6716458,
     type: 2}
-  _stickPrefab: {fileID: 1120278863736426, guid: 0377a47273e03fc429ba0e831263bbf4,
+  stickPrefab: {fileID: 1829261766060490, guid: 0377a47273e03fc429ba0e831263bbf4,
     type: 2}
-  _diamondPrefab: {fileID: 1954676783727592, guid: 6dc3bcc480de51e4182b59a42d344c21,
+  diamondPrefab: {fileID: 1954676783727592, guid: 6dc3bcc480de51e4182b59a42d344c21,
     type: 2}
-  _currentCamera: {fileID: 1054268542}
-  _rotateTransform: {fileID: 4581451390312404, guid: f46d7e39f35e3bc46a204ef641cc1032,
+  currentCamera: {fileID: 1054268542}
+  rotateTransform: {fileID: 4581451390312404, guid: f46d7e39f35e3bc46a204ef641cc1032,
     type: 2}
-  _endRotateTransform: {fileID: 4644315681726462, guid: 2253b93440d92bb4f9df0d2677b4db0f,
+  endRotateTransform: {fileID: 4644315681726462, guid: 2253b93440d92bb4f9df0d2677b4db0f,
     type: 2}
-  _scorePanel: {fileID: 683905088}
-  _startPanel: {fileID: 1905428055}
-  _losePanel: {fileID: 785821292}
-  _scoreText: {fileID: 1068213765}
-  _scoreLoseText: {fileID: 67829829}
-  _diamondsText: {fileID: 1506251055}
-  _hightScoreText: {fileID: 1068213765}
-  _stickIncreaseSpeed: 3
-  _maxStickSize: 10
+  scorePanel: {fileID: 683905088}
+  startPanel: {fileID: 1905428055}
+  endPanel: {fileID: 785821292}
+  scoreText: {fileID: 1068213765}
+  scoreEndText: {fileID: 67829829}
+  diamondsText: {fileID: 1506251055}
+  highScoreText: {fileID: 1068213765}
+  stickIncreaseSpeed: 5
+  maxStickSize: 5
 --- !u!4 &1943680970
 Transform:
   m_ObjectHideFlags: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1943680969}
-        m_MethodName: GameOver
+        m_MethodName: GameRestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
